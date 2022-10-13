@@ -30,10 +30,8 @@ async function buscaEndereco(cep) {
 
 }
 
-let ceps = ['01001000', '01001001'];
-let conjutoCeps = ceps.map(valores => buscaEndereco(valores));
+var cep = document.getElementById('cep');
 
-Promise.all(conjuntoCeps).then(respostas => console.log(respostas));
 
 
 
